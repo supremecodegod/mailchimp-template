@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=DM+Serif+Text:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css"
+        integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+        integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+    <style>
+        body {
+            background: #eeeeee;
+            font-family: 'Varela Round', sans-serif;
+        }
+
+        .navbar {
+            color: #fff;
+            background: #ffffff !important;
+            padding: 5px 16px;
+            border-radius: 0;
+            border: none;
+            box-shadow: 0 0 4px rgba(0, 0, 0, .1);
+        }
+
+        .navbar .navbar-brand {
+            color: #efe5ff;
+            padding-left: 0;
+            padding-right: 50px;
+            font-size: 24px;
+        }
+
+        .navbar .navbar-brand:hover,
+        .navbar .navbar-brand:focus {
+            color: #fff;
+        }
+
+        .navbar .navbar-brand i {
+            font-size: 25px;
+            margin-right: 5px;
+        }
+
+        .navbar .nav-item i {
+            font-size: 18px;
+        }
+
+        .navbar .nav-item span {
+            position: relative;
+            top: 3px;
+        }
+
+        .navbar .navbar-nav>a {
+            color: #efe5ff;
+            padding: 8px 15px;
+            font-size: 14px;
+        }
+
+        .navbar .navbar-nav>a:hover,
+        .navbar .navbar-nav>a:focus {
+            color: #fff;
+            text-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
+        }
+
+        .navbar .navbar-nav>a>i {
+            display: block;
+            text-align: center;
+        }
+
+        .navbar .dropdown-item i {
+            font-size: 16px;
+            min-width: 22px;
+        }
+
+        .navbar .dropdown-item .material-icons {
+            font-size: 21px;
+            line-height: 16px;
+            vertical-align: middle;
+            margin-top: -2px;
+        }
+
+        .navbar .nav-item.open>a,
+        .navbar .nav-item.open>a:hover,
+        .navbar .nav-item.open>a:focus {
+            color: #fff;
+            background: none !important;
+        }
+
+        .navbar .dropdown-menu {
+            border-radius: 1px;
+            border-color: #e5e5e5;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+        }
+
+        .navbar .dropdown-menu a {
+            color: #777 !important;
+            padding: 8px 20px;
+            line-height: normal;
+            font-size: 15px;
+        }
+
+        .navbar .dropdown-menu a:hover,
+        .navbar .dropdown-menu a:focus {
+            color: #333 !important;
+            background: transparent !important;
+        }
+
+        .navbar .navbar-nav .active a,
+        .navbar .navbar-nav .active a:hover,
+        .navbar .navbar-nav .active a:focus {
+            color: #fff;
+            text-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
+            background: transparent !important;
+        }
+
+        .navbar .navbar-nav .user-action {
+            padding: 9px 15px;
+            font-size: 15px;
+        }
+
+        .navbar .divider {
+            background-color: #e9ecef !important;
+        }
+
+        .de {
+            color: #1b2b46;
+            background-color: #ececed;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        .div-border{
+            border-bottom: 1px solid #7c8fa1;
+            font-family: 'Lato', sans-serif;
+            color: #7c8fa1;
+            font-size: 24px;
+            line-height: 18px;
+        }
+
+        .main-title p{
+            padding-top: 20px;
+            font-family: 'Lato', sans-serif;
+            color: #434a50;
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+
+        @media (max-width: 1199px) {
+
+            .navbar .navbar-nav {
+                margin: 8px 0;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: center;
+
+            }
+
+            .navbar .navbar-toggle {
+                margin-right: 0;
+            }
+
+            .input-group {
+                width: 100%;
+            }
+
+            .navbar .navbar-brand {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                padding-right: 0;
+                margin-right: 0;
+            }
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-xl  ">
+        <a class="navbar-brand" href="#" class="logo-color">
+            <img src="img-logo.png" alt="" class="logo-color">
+        </a>
+
+        <div class="navbar-nav ml-auto ">
+            <a href="#" class="nav-item nav-link active"><i class="de fa fa-twitter"></i></a>
+            <a href="#" class="nav-item nav-link"><i class="de fa fa-linkedin"></i></a>
+            <a href="#" class="nav-item nav-link"><i class="de fa-brands fa-youtube"></i></a>
+
+
+        </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section w-100">
+
+
+            <div class="size">
+                <img src="/hero-image.jpg" alt="Flowers" class="w-100">
+            </div>
+
+
+        </section>
+
+        <section class="main-title p-5 text-left">
+
+            <div class="div-border">
+            <h1>MAIN TITLE GOES HERE</h1>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam numquam quam architecto minima omnis
+                hic facilis quae ipsum, voluptatem, eveniet vitae in facere ullam unde ut magnam repudiandae officiis.
+                Reprehenderit.
+            </p>
+
+
+
+        </section>
+
+        <section class="main-title p-5 text-left">
+
+            <div class="div-border">
+            <h1>TITLE GOES HERE</h1>
+            </div>
+
+            <div>
+                <img src="#" alt="">
+            </div>
+
+            <h3> Lorem Ipsum Dolor Sit Amet. </h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam numquam quam architecto minima omnis
+                hic facilis quae ipsum, voluptatem, eveniet vitae in facere ullam unde ut magnam repudiandae officiis.
+                Reprehenderit.
+            </p>
+            <button type="button" class="btn btn-primary">Primary</button>
+
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
